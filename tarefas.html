@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/e7ebc2fc39.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="./style.css" />
+        <title>Todo List - Fullture</title>
+        <script src="./tarefas.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>FULLTURE Todo List</h1>
+        </header>
+
+        <form id="form" class="form">
+            <input type="text" id="todo-input" class="todo-input" maxlength="40" />
+            <button class="todo-button" type="submit">
+                <i class="fas fa-plus-square"></i>
+            </button>
+            <div class="select">
+                <select name="todos" id="select-filtro">
+                    <option value="all">Todas</option>
+                    <option value="done">Finalizadas</option>
+                    <option value="pending">Não Finalizadas</option>
+                </select>
+            </div>
+        </form>
+
+        <div class="todo-container">
+          <ul class="todo-list" id="tarefas"></ul>
+        </div>
+    </body>
+</html>
